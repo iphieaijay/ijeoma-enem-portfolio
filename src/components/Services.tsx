@@ -3,16 +3,17 @@ import { Badge } from '@/components/ui/badge';
 
 const Services = () => {
   const technicalSkills = [
-    ".NET (C#, ASP.NET Core)",
+    ".NET (C#, ASP.NET Core, Blazor)",
     "RESTful APIs",
     "SQL Server",
+   "MongoDB",
     "PostgreSQL", 
     "MySQL",
     "Azure",
     "AWS",
     "Angular",
-    "React",
-    "Vue.js",
+    "React-Next.JS",
+    "Nest.js",
     "SOLID Principles",
     "CI/CD",
     "Agile",
@@ -34,7 +35,7 @@ const Services = () => {
       icon: "👥"
     },
     {
-      title: "System Design Consulting",
+      title: "System Design & Architecture Consulting",
       description: "Offer strategic consulting on system architecture, database design, and technology selection to help organizations build robust, scalable solutions that align with business objectives.",
       icon: "🎯"
     },
