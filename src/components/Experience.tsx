@@ -8,13 +8,14 @@ const Experience = () => {
       company: "Connected Analytics Limited",
       period: "November 2022 – Present",
       description: [
-        "Led Project Management Efforts for Store Smart application, overseeing project phases from requirements gathering to deployment, improving application workflows by 20%",
-        "Managed Cross-Functional Teams in Agile settings, coordinating with product, QA, and operations teams to translate business requirements into scalable technical solutions",
-        "Designed and Implemented Enterprise-Grade Systems using .NET Core, EF Core, Dapper, RabbitMQ, SQL Server and Azure optimizing for security, scalability, and performance",
-        "Authored Comprehensive Documentations detailing architectural decisions, design patterns, best practices and technical guidelines"
+        "Lead a team of 10+ engineers in the design, development, and deployment of fintech SaaS products, delivering scalable and secure applications with a 20% performance improvement.",
+        "Led the development of B2C fintech solutions, integrating Restful API and modern UI/UX designs, increasing user retention by 25%.",
+        "Designed and implemented cloud-based microservices using .NET Core and Azure, ensuring 99.9% application uptime.",
+        "Mentored junior developers, fostering a culture of technical excellence and collaboration.",
+        "Streamlined CI/CD processes, reducing deployment times by 30% and enhancing development efficiency."
       ],
       achievements: [
-        "Led deployment of Store Smart application, improving merchant payment workflows through POS and NFC integrations, resulting in a 45% boost in merchant sales",
+        "Led deployment of Store Smart application API Architecture, improving merchant payment workflows through POS and NFC integrations, resulting in a 45% boost in merchant sales",
         "Optimized backend processing by designing efficient database schemas and writing advanced queries, achieving a 40% reduction in query execution time"
       ],
       current: true
@@ -24,12 +25,15 @@ const Experience = () => {
       company: "Leadway Assurance Company Limited",
       period: "February 2020 – November 2022",
       description: [
-        "Oversaw Software Development Life Cycle (SDLC), coordinating technical specifications, code reviews, and testing protocols",
-        "Streamlined Backend Operations by managing project tasks focused on API integration with Citibank and improving response times by over 20%",
-        "Implemented Project Management Best Practices to refine workflows and ensure on-time delivery in fast-paced environments"
+        "Developed and maintained secure B2C insurance applications using C#, .NET Framework, and Microsoft SQL Server.",
+        "Implemented design patterns and best practices to optimize application scalability and reliability.",
+        "Collaborated with cross-functional teams to launch new features that improved customer engagement by 20%.",
+        "Enhanced API performance and documentation, reducing integration times for third-party developers by 40%.",
+        "Optimized legacy applications performance, reducing system downtime by 25%."
       ],
       achievements: [
-        "Successfully launched a compliance dashboard, reducing document processing times by 35%",
+        "Successfully launched a Compliance Reporting Dashboard that streamlined documentation workflows, resulting in a 35% reduction in processing time and improved regulatory reporting accuracy.",
+        "Successfully developed and deployed an internal bidding application for auctioning company-owned assets, streamlining the disposal process and reducing asset liquidation time by 60%, while increasing internal participation by 40%.",
         "Improved system reliability and decreased downtime by 25% through strategic backend optimization and database indexing"
       ],
       current: false
