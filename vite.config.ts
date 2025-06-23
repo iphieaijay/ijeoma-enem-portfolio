@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/ijeoma-enem-portfolio",
+  base: "/phieaijay.portfolio.io/",
   plugins: [    
     react(),
     mode === 'development' &&
