@@ -50,12 +50,12 @@ const Navigation = () => {
                 className="bg-purple hover:bg-purple-light text-white ml-4"
               >
                 <a 
-                  href="https://drive.google.com/file/d/17bYkTxKL7aB8hQsOj0dAGINtmqHCIcfr/view?usp=drive_link" 
+                  href="https://docs.google.com/document/d/1_xskmExJVDtNi-vrTJq_K14QxqbANN5b-U6RQL4LvtU/edit?tab=t.0" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <Download size={16} />
+                   <Download size={16} />
                   Resume
                 </a>
               </Button>

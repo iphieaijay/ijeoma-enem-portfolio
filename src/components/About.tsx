@@ -20,7 +20,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            I Am Modern <span className="gradient-text">Backend Developer</span>
+            I Am A Modern <span className="gradient-text">Backend Developer</span>
           </h2>
           <div className="w-24 h-1 bg-purple mx-auto"></div>
         </div>
@@ -47,14 +47,17 @@ const About = () => {
             <h3 className="text-2xl font-bold text-navy mb-6">About Me</h3>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p className="transform hover:translate-x-2 transition-transform duration-300">
-                I'm Ijeoma Ifeyinwa Enem, a passionate and purpose-driven individual blending technical mastery with strategic thinking. I am a senior backend developer specializing in .NET and microservices, but my work clearly goes beyond code — I think in systems, scale, and impact.
-              </p>
+              Hi, I’m Ijeoma Ifeyinwa Enem — a purpose-driven technologist who blends deep technical expertise with strategic thinking to build systems that scale and deliver real-world impact.
+            </p>
               <p className="transform hover:translate-x-2 transition-transform duration-300">
-                I have a strong entrepreneurial mindset, frequently exploring ideas that merge technology, education, and empowerment, especially for fresh graduates and tech migrants. My approach combines deep technical expertise with leadership skills that drive meaningful transformation in every project I touch.
-              </p>
+              As a Senior Backend Developer specializing in .NET and microservices, I do more than just write code — I architect solutions with a systems-level mindset, always thinking in terms of performance, sustainability, and business value.
+          </p>
               <p className="transform hover:translate-x-2 transition-transform duration-300">
-                With extensive experience in enterprise-grade systems and a passion for mentoring the next generation of developers, I focus on creating scalable solutions that not only meet business requirements but also foster growth and innovation within development teams.
-              </p>
+              With a strong entrepreneurial spirit, I'm passionate about exploring ideas that merge technology and business, especially within the SaaS, B2B, and B2C spaces. My work is guided by a vision to create products that not only function — but also transform.
+            </p>
+            <p className="transform hover:translate-x-2 transition-transform duration-300">
+              Beyond engineering, I’m deeply invested in mentoring the next generation of developers and shaping collaborative teams that grow together. Whether I’m designing enterprise-grade platforms or brainstorming a new idea, I aim to create solutions that empower users, drive innovation, and support long-term business growth.
+            </p>
             </div>
 
             {/* Education */}
