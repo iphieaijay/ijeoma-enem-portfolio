@@ -50,7 +50,7 @@ const Navigation = () => {
                 className="bg-purple hover:bg-purple-light text-white ml-4"
               >
                 <a 
-                  href="https://docs.google.com/document/d/1_xskmExJVDtNi-vrTJq_K14QxqbANN5b-U6RQL4LvtU/edit?tab=t.0" 
+                  href="https://docs.google.com/document/d/1_xskmExJVDtNi-vrTJq_K14QxqbANN5b-U6RQL4LvtU/edit?usp=drive_link" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
