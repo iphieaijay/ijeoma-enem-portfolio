@@ -20,7 +20,8 @@ const Services = () => {
     "Microservices",
     "RabbitMQ",
     "EF Core",
-    "Dapper"
+    "Dapper",
+    "Bootstrap", "TailwindCSS"
   ];
 
   const services = [

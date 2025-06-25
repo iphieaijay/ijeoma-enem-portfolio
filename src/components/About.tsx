@@ -50,7 +50,7 @@ const About = () => {
               Hi, I’m Ijeoma Ifeyinwa Enem — a purpose-driven technologist who blends deep technical expertise with strategic thinking to build systems that scale and deliver real-world impact.
             </p>
               <p className="transform hover:translate-x-2 transition-transform duration-300">
-              As a Senior Backend Developer specializing in .NET and microservices, I do more than just write code — I architect solutions with a systems-level mindset, always thinking in terms of performance, sustainability, and business value.
+              As a Senior Fullstack Developer, I do more than just write code — I architect solutions with a systems-level mindset, always thinking in terms of performance, sustainability, and business value.
           </p>
               <p className="transform hover:translate-x-2 transition-transform duration-300">
               With a strong entrepreneurial spirit, I'm passionate about exploring ideas that merge technology and business, especially within the SaaS, B2B, and B2C spaces. My work is guided by a vision to create products that not only function — but also transform.
