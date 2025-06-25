@@ -70,7 +70,7 @@ const Hero = () => {
               <Button 
                 onClick={() => scrollToSection('#contact')}
                 variant="outline" 
-                className="border-purple text-purple hover:bg-white hover:text-navy px-8 py-3 text-lg font-medium transform hover:scale-105 transition-all duration-300"
+                className="bg-navy text-white hover:bg-white hover:text-navy px-8 py-3 text-lg font-medium transform hover:scale-105 transition-all duration-300"
               >
                 Hire Me
               </Button>
