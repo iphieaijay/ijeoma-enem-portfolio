@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen hero-gradient flex items-center relative overflow-hidden">
+    <section id="home" className="min-h-screen top-20 hero-gradient flex items-center relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-72 h-72 bg-purple rounded-full blur-3xl"></div>
@@ -70,7 +70,7 @@ const Hero = () => {
               <Button 
                 onClick={() => scrollToSection('#contact')}
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-navy px-8 py-3 text-lg font-medium transform hover:scale-105 transition-all duration-300"
+                className="border-purple text-purple hover:bg-white hover:text-navy px-8 py-3 text-lg font-medium transform hover:scale-105 transition-all duration-300"
               >
                 Hire Me
               </Button>
