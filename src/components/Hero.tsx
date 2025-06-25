@@ -26,7 +26,7 @@ const Hero = () => {
               <div className="w-full max-w-md mx-auto">
                 <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-purple to-navy p-1">
                   <img 
-                    src="/lovable-uploads/db7c5721-d700-4d36-a624-791eb8defe2e.png" 
+                    src="{`${import.meta.env.BASE_URL}lovable-uploads/db7c5721-d700-4d36-a624-791eb8defe2e.png" 
                     alt="Ijeoma Ifeyinwa Enem" 
                     className="w-full h-auto object-cover rounded-xl bg-white"
                   />

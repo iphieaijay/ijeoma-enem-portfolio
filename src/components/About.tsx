@@ -31,7 +31,7 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-purple/20 to-navy/20 p-6">
                 <img 
-                  src="/lovable-uploads/6b3ebd26-6b19-4638-a932-a5db6c59615f.png" 
+                  src="{`${import.meta.env.BASE_URL}lovable-uploads/6b3ebd26-6b19-4638-a932-a5db6c59615f.png" 
                   alt="Ijeoma Ifeyinwa Enem" 
                   className="w-full h-auto object-cover rounded-xl transform hover:scale-105 transition-all duration-500"
                 />
