@@ -20,7 +20,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            I Am A Modern <span className="gradient-text">Backend Developer</span>
+            I Am A Modern <span className="gradient-text">Fullstack Developer</span>
           </h2>
           <div className="w-24 h-1 bg-purple mx-auto"></div>
         </div>
