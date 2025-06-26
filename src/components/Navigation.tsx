@@ -85,13 +85,8 @@ const Navigation = () => {
                     asChild 
                     className="bg-purple hover:bg-purple-light text-white mt-4 w-full"
                   >
-                    <a 
-                      href="https://drive.google.com/file/d/17bYkTxKL7aB8hQsOj0dAGINtmqHCIcfr/view?usp=drive_link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2"
-                    >
-                      <Download size={16} />
+                    <a href="/portfolio/resume.pdf" target="_blank" className="flex items-center justify-center gap-2" rel="noopener noreferrer" download>
+                    <Download size={16} />
                       Resume
                     </a>
                   </Button>
