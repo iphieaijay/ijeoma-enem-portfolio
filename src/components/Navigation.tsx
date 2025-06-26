@@ -13,6 +13,7 @@ const Navigation = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Blog', href: '#blog' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -50,7 +51,7 @@ const Navigation = () => {
                 className="bg-purple hover:bg-purple-light text-white ml-4"
               >
                 <a 
-                  href="https://docs.google.com/document/d/1_xskmExJVDtNi-vrTJq_K14QxqbANN5b-U6RQL4LvtU/edit?usp=drive_link" 
+                  href="/portfolio/resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

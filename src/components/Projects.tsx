@@ -19,8 +19,8 @@ const Projects = () => {
       ]
     },
     {
-      title: "Store Smart Payment System",
-      description: "Enterprise-grade payment processing system with POS and NFC integrations, supporting multiple payment methods and real-time transaction monitoring.",
+      title: "Multi-Merchant Inventory Manager",
+      description: "Enterprise-grade multi-merchant Inventory Manager with POS integrations, supporting multiple payment methods and real-time transaction monitoring.",
       technologies: [".NET Core", "RabbitMQ", "Azure", "SQL Server", "Angular"],
       githubUrl: "#",
       features: [
@@ -32,7 +32,7 @@ const Projects = () => {
       ]
     },
     {
-      title: "Microservices E-Commerce Platform",
+      title: "E-Commerce Microservices",
       description: "Scalable e-commerce backend built with microservices architecture, featuring order management, inventory tracking, and payment processing services.",
       technologies: ["Microservices", ".NET Core", "Docker", "Kubernetes", "PostgreSQL"],
       githubUrl: "#",
