@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef} from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,16 +6,22 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useSendEmail } from "@/hooks/useSendEmail";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+const Contact= () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const { sendEmail } = useSendEmail();
   const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  // ✅ Handles input changes safely
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -23,20 +29,32 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+
+  // Handles form submission with async/await
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+    if (!formRef.current) return;
+
+    const res = await sendEmail(
+      formRef.current,
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      import.meta.env.VITE_EMAILJS_USER_ID
+    );
+
+    if (res.success) {
+      toast({
+        title: "✅ Message sent!",
+        description: "Your message has been received. I'll get back to you shortly."
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      toast({
+        title: "❌ Failed to send",
+        description: "Please try again later.",
+        variant: "destructive"
+      });
+    }
   };
 
   const contactInfo = [
@@ -87,7 +105,7 @@ const Contact = () => {
               <CardTitle className="text-2xl text-navy">Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form  ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Label htmlFor="name" className="text-navy font-medium">Name</Label>
                   <Input
@@ -196,5 +214,5 @@ const Contact = () => {
     </section>
   );
 };
-
 export default Contact;
+
