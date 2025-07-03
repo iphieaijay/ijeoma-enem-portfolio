@@ -10,7 +10,7 @@ const Footer = () => {
           </p>
           <div className="border-t border-navy-light pt-4">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Ijeoma Ifeyinwa Enem. All rights reserved.
+             &copy; {new Date().getFullYear()} Ijeoma Ifeyinwa Enem. All rights reserved.
             </p>
           </div>
         </div>

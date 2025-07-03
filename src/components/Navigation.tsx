@@ -13,7 +13,7 @@ const Navigation = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Blog', href: '#blog' },
+    // { name: 'Blog', href: '#blog' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -83,7 +83,7 @@ const Navigation = () => {
                     </button>
                   ))}
                   <Button asChild className="bg-purple hover:bg-purple-light text-white mt-4 w-full">
-                    <a href="/portfolio/resume.pdf" target="_blank" className="flex items-center justify-center gap-2" rel="noopener noreferrer" download>
+                    <a href="/resume.pdf" target="_blank" className="flex items-center justify-center gap-2" rel="noopener noreferrer" download>
                     <Download size={16} />
                       Resume
                     </a>

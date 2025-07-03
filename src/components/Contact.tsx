@@ -7,9 +7,12 @@ import { Label } from '@/components/ui/label';
 import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useSendEmail } from "@/hooks/useSendEmail";
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const Contact= () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const { sendEmail } = useSendEmail();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -17,6 +20,7 @@ const Contact= () => {
     email: "",
     message: ""
   });
+
 
   // ✅ Handles input changes safely
   const handleInputChange = (
@@ -34,7 +38,24 @@ const Contact= () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formRef.current) return;
+ 
 
+     if (!executeRecaptcha) {
+      alert('Recaptcha not loaded');
+      return;
+    }
+
+    const token = await executeRecaptcha('contact_form');
+    if (!token) {
+      toast({
+        title: "❌ Recaptcha failed",
+        description: "Please try again.",
+        variant: "destructive"
+      });
+      return;
+    }
+    console.log('Recaptcha token:', token);
+    
     const res = await sendEmail(
       formRef.current,
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -83,6 +104,9 @@ const Contact= () => {
       href: "https://github.com/iphieaijay"
     }
   ];
+const setTokenFunc = (getToken) => {
+    setToken(getToken);
+  };
 
   return (
     <section id="contact" className="section-padding bg-gradient-to-br from-purple/5 to-navy-light/10">
