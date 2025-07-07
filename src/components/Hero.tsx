@@ -54,7 +54,7 @@ const Hero = () => {
               Engineering Scalable Solutions with Purpose & Precision
             </h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              Senior Backend Fullstack Developer specializing in .NET, Blazor, NodeJS, Angular, React-Next.JS, MongoDB, PostgreSQL, and microservices architecture. 
+              Senior Fullstack Developer specializing in .NET, Blazor, NodeJS, Angular, React-Next.JS, MongoDB, PostgreSQL, and microservices architecture. 
               I think in systems, scale, and impact, blending technical mastery with strategic thinking 
               to create solutions that empower and transform.
             </p>
