@@ -51,7 +51,7 @@ const Navigation = () => {
                 className="bg-purple hover:bg-purple-light text-white ml-4"
               >
                 <a 
-                  href="/portfolio/resume.pdf" 
+                  href="/resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
